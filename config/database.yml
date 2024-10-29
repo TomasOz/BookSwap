@@ -1,0 +1,23 @@
+development:
+ adapter: mysql2
+ database: bookswap_rails
+ username: username_rails
+ password: username_password
+ host: localhost
+ encoding: utf8
+
+test:
+ database: testdb
+ adapter: mysql2
+ encoding: utf8
+ username: 
+ password: 
+ host: localhost
+
+production:
+ adapter: mysql2
+ database: Railsdb
+ username: 
+ password: 
+ host: localhost
+ encoding: utf8
