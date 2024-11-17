@@ -13,5 +13,12 @@
   <body>
     <%= render 'shared/header' %>
     <%= yield %>
+    <%= render 'shared/footer' %>
   </body>
 </html>
+
+<% if logged_in? %>
+  <script>
+    const USER_ID = <%= current_user.id %>;
+  </script>
+<% end %>

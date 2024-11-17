@@ -1,5 +1,11 @@
-<div class="d-flex flex-column align-items-center justify-content-center vh-100">
-  <h1>Sidekiq Testing</h1>
-  <%= link_to 'Test Sidekiq !', perform_sidekiq_task_path, class: "btn btn-success mt-3" %>
-  <%= link_to 'Test Sidekiq in 5 !', perform_sidekiq_task_later_path, class: "btn btn-success mt-3" %>
+<div class="d-flex flex-column align-items-center justify-content-center pt-5 pb-3 bg-light">
+  <h1 class="mb-4">Application Cable Testing</h1>
+  <button onclick="openChat(2, 'User1')" class="btn btn-info btn-lg mb-3 shadow">Chat with User1</button>
+  <button onclick="openChat(3, 'User2')" class="btn btn-info btn-lg shadow">Chat with User2</button>
+</div>
+
+<div class="d-flex flex-column align-items-center justify-content-center vh-75 pt-5 bg-light">
+  <h1 class="mb-4">Sidekiq Testing</h1>
+  <%= link_to 'Test Sidekiq!', perform_sidekiq_task_path, class: "btn btn-primary btn-lg mb-3 shadow" %>
+  <%= link_to 'Test Sidekiq in 5!', perform_sidekiq_task_later_path, class: "btn btn-warning btn-lg shadow" %>
 </div>

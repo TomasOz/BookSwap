@@ -15,6 +15,9 @@
           </div>
           <div class="card-footer">
             <%= link_to 'View Details', book_path(book), class: 'btn btn-primary btn-block' %> <!-- Button for actions -->
+            <% if logged_in? && book.user_id != current_user.id %>
+              <button onclick="openChat(<%= book.user_id %>, 'User1')" class="btn btn-primary btn-block">Chat with Owner</button>
+            <% end %>
           </div>
         </div>
       </div>
